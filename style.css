@@ -83,7 +83,10 @@ li{
     padding-bottom: 0.75rem;
     color: var(--darkgrey);
 }
-
+/**/
+ul li::marker{
+    padding-right: 3px;
+}
 .input__group{
     display: flex;
     flex-direction: column;
