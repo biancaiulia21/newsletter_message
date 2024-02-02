@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_subscribe.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: antiquewhite; }
+    .attribution a { color: hsl(298, 75%, 76%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="newsletter__success">
+      <div class="news__img">
+        <img src="./assets/images/icon-success.svg" alt="">
+      </div>
+      <div class="news__main">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <strong><span id="email"></span></strong>. 
+            Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <div class="news__btn">
+        <button onclick="location.href = 'index.html';" class="btn">Dismiss message</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script>
+    const emailPerson = localStorage.getItem("email-person");
+    document.getElementById("email").textContent=emailPerson;
+  </script>
+</body>
+</html>
