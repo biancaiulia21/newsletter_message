@@ -204,7 +204,7 @@ ul li::marker{
         font-size: 4.5vw;
     }
     button{
-        width: 80vw;
+        width: 80vw;/* trebuie sters*/
         max-height:20vw;
     }
   
